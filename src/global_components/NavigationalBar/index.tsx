@@ -1,9 +1,9 @@
-import * as React from "react";
-import "./styles/NavigationalBar.scss";
+import { FC } from "react";
 import { Box, Stack } from "@mui/material";
 import { Link } from "react-router-dom";
+import "./styles/NavigationalBar.scss";
 
-export const NavigationalBar: React.FC = () => {
+export const NavigationalBar: FC = () => {
   return (
     <Box className="navigational-bar">
       <Link className="header-text" to="/">
