@@ -1,3 +1,36 @@
+@font-face {
+    font-family: dream_only;
+    src: url("../../../assets/dream_only.ttf");
+}
+
+@font-face {
+    font-family: oswald;
+    src: url("../../../assets/oswald.ttf");
+}
+
+@font-face {
+    font-family: grape_nuts;
+    src: url("../../../assets/grape_nuts.ttf");
+}
+
 .navigational-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: #251b37;
+    min-height: 80px;
+    padding: 0 10em;
+
+    .header-text {
+        font-family: dream_only;
+        font-size: 0.9em;
+        color: white;
+        text-shadow: 5px 5px 10px #FFCACA;
+    }
+
+    .links-nav {
+        font-family: grape_nuts;
+        color: white;
+    }
 }
