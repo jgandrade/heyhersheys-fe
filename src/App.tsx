@@ -1,4 +1,4 @@
-import * as COMPONENT from "./global_components"
+import * as COMPONENT from "./global_components";
 
 export const App: React.FC = () => {
   return (
@@ -6,5 +6,5 @@ export const App: React.FC = () => {
       <COMPONENT.NavigationalBar />
       <COMPONENT.RoutesWrapper />
     </COMPONENT.AppWrapper>
-  )
-}
+  );
+};

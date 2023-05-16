@@ -1,13 +1,15 @@
-import React from 'react'
-import { Box } from "@mui/material"
-import { webStyle } from "./styles/AppWrapper.styles"
+import React from "react";
+import { Box } from "@mui/material";
+import { webStyle } from "./styles/AppWrapper.styles";
 import "./styles/AppWrapper.scss";
 
 interface ReactWrapper {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
 export const AppWrapper = ({ children }: ReactWrapper) => {
-    return (
-        <Box sx={webStyle.AppStyle} className="app-wrapper">{children}</Box>
-    )
-}
+  return (
+    <Box sx={webStyle.AppStyle} className="app-wrapper">
+      {children}
+    </Box>
+  );
+};
