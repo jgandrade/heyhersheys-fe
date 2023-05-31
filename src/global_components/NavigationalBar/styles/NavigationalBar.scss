@@ -1,0 +1,30 @@
+@font-face {
+    font-family: dream_only;
+    src: url("../../../assets/dream_only.ttf");
+}
+
+@font-face {
+    font-family: oswald;
+    src: url("../../../assets/oswald.ttf");
+}
+
+@font-face {
+    font-family: grape_nuts;
+    src: url("../../../assets/grape_nuts.ttf");
+}
+
+.navigational-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    padding: 0 2em;
+
+    .header-text {
+        font-family: dream_only;
+        filter: blur(0.2px);
+        font-size: 0.9em;
+        color: #222222;
+    }
+}
