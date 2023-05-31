@@ -1,19 +1,24 @@
-import { FC } from "react";
-import { Box, Stack } from "@mui/material";
-import { Link } from "react-router-dom";
 import "./styles/NavigationalBar.scss";
+import { FC, useState } from "react";
+import { Box } from "@mui/material";
+import { Link } from "react-router-dom";
+import BurgerButton from "./BurgerButton";
+import SideBar from "./SideBar";
 
 export const NavigationalBar: FC = () => {
+  const [active, setActive] = useState<boolean>(false);
+  const setActiveToggle = (): void => {
+    setActive(!active);
+  };
+
+  console.log(active);
   return (
-    <Box className="navigational-bar">
-      <Link className="header-text" to="/">
+    <Box className="navigational-bar sm:px-[3.5em] md:px-[6em] lg:px-[8em]">
+      <Link className="header-text relative z-[1000]" to="/">
         heyhersheys
       </Link>
-      <Stack className="links-nav" direction="row" spacing={2}>
-        <Link to="/about">About</Link>
-        <Link to="/blogs">Blogs</Link>
-        <Link to="/contact">Contact</Link>
-      </Stack>
+      <BurgerButton setActive={() => setActiveToggle()} />
+      {active && <SideBar />}
     </Box>
   );
 };

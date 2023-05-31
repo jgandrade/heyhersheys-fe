@@ -18,19 +18,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #251b37;
     min-height: 80px;
-    padding: 0 10em;
+    padding: 0 2em;
 
     .header-text {
         font-family: dream_only;
+        filter: blur(0.2px);
         font-size: 0.9em;
-        color: white;
-        text-shadow: 5px 5px 10px #FFCACA;
-    }
-
-    .links-nav {
-        font-family: grape_nuts;
-        color: white;
+        color: #222222;
     }
 }
