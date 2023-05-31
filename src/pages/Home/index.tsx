@@ -1,7 +1,7 @@
-import { Box, Container } from "@mui/material";
+import { Box } from "@mui/material";
 import "./styles/homepage.scss";
 
-export const Home: React.FC = () => {
+const Home: React.FC = () => {
   return (
     <Box className="homepage">
       <Box className="hero">
@@ -14,3 +14,5 @@ export const Home: React.FC = () => {
     </Box>
   );
 };
+
+export default Home;

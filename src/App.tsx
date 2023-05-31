@@ -1,10 +1,13 @@
-import * as COMPONENT from "./global_components";
+import COMPONENT from "./global_components";
+import { Suspense } from "react";
 
 export const App: React.FC = () => {
   return (
-    <COMPONENT.AppWrapper>
-      <COMPONENT.NavigationalBar />
-      <COMPONENT.RoutesWrapper />
-    </COMPONENT.AppWrapper>
+    <Suspense fallback={<COMPONENT.Loading />}>
+      <COMPONENT.AppWrapper>
+        <COMPONENT.NavigationalBar />
+        <COMPONENT.RoutesWrapper />
+      </COMPONENT.AppWrapper>
+    </Suspense>
   );
 };
