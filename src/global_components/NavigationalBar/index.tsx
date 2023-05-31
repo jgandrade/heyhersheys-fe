@@ -11,14 +11,13 @@ export const NavigationalBar: FC = () => {
     setActive(!active);
   };
 
-  console.log(active);
   return (
     <Box className="navigational-bar sm:px-[3.5em] md:px-[6em] lg:px-[8em]">
       <Link className="header-text relative z-[1000]" to="/">
         heyhersheys
       </Link>
       <BurgerButton setActive={() => setActiveToggle()} />
-      {active && <SideBar />}
+      <SideBar isActive={active} />
     </Box>
   );
 };
