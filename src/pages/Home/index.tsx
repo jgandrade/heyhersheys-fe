@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export const Home: React.FC = () => {
-    return (
-        <div>HOME</div>
-    )
-}
+  return <div>HOME</div>;
+};
