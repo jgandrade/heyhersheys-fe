@@ -1,7 +1,6 @@
-import React from 'react'
+import { Box } from "@mui/material";
+import "./styles/homepage.scss";
 
 export const Home: React.FC = () => {
-    return (
-        <div>HOME</div>
-    )
-}
+  return <Box className="homepage">HOME</Box>;
+};
