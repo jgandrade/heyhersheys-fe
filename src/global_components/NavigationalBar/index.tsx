@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import BurgerButton from "./BurgerButton";
 import SideBar from "./SideBar";
 
-export const NavigationalBar: FC = () => {
+const NavigationalBar: FC = () => {
   const [active, setActive] = useState<boolean>(false);
   const setActiveToggle = (): void => {
     setActive(!active);
@@ -13,7 +13,7 @@ export const NavigationalBar: FC = () => {
 
   return (
     <Box className="navigational-bar sm:px-[3.5em] md:px-[6em] lg:px-[8em]">
-      <Link className="header-text relative z-[1000]" to="/">
+      <Link className="header-text relative z-[1000] font-[dream_only]" to="/">
         heyhersheys
       </Link>
       <BurgerButton setActive={() => setActiveToggle()} />
@@ -21,3 +21,5 @@ export const NavigationalBar: FC = () => {
     </Box>
   );
 };
+
+export default NavigationalBar;

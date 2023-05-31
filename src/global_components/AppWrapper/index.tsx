@@ -6,10 +6,12 @@ import "./styles/AppWrapper.scss";
 interface ReactWrapper {
   children: React.ReactNode;
 }
-export const AppWrapper = ({ children }: ReactWrapper) => {
+const AppWrapper = ({ children }: ReactWrapper) => {
   return (
     <Box sx={webStyle.AppStyle} className="app-wrapper">
       {children}
     </Box>
   );
 };
+
+export default AppWrapper;

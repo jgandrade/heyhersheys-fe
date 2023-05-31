@@ -1,10 +1,12 @@
-import { Routes, Route } from "react-router-dom"
-import * as PAGE from "../../pages/index"
+import { Routes, Route } from "react-router-dom";
+import PAGE from "../../pages/index";
 
-export const RoutesWrapper = () => {
-    return (
-        <Routes>
-            <Route path="/" element={<PAGE.Home />} />
-        </Routes>
-    )
-}
+const RoutesWrapper = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<PAGE.Home />} />
+    </Routes>
+  );
+};
+
+export default RoutesWrapper;
