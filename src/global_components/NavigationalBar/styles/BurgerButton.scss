@@ -17,6 +17,7 @@ svg {
 .plate {
     height: 80px;
     width: 80px;
+    transition: transform 0.3s ease;
 }
 .burger {
     filter: url(#gooeyness);
@@ -27,7 +28,7 @@ svg {
 }
 .line {
     fill: none;
-    stroke: #222222;
+    stroke: #333333;
     stroke-width: 6px;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -37,7 +38,32 @@ svg {
 .x .line {
     stroke-width: 5.5px;
 }
+
+.line2 {
+    transition: all 0.3s ease;
+}
+.line3 {
+    transition: all 0.3s ease;
+}
+.line1 {
+    transition: all 0.3s ease;
+}
+.plate1:hover {
+    .line2 {
+        stroke-dasharray: 30 200;
+    }
+    .line3 {
+        stroke-dasharray: 30 200;
+    }
+    .line1 {
+        stroke-dasharray: 30 200;
+    }
+}
 /* First plate */
+.plate1 .line1 {
+    stroke-dasharray: 40 179;
+    stroke-dashoffset: 0px;
+}
 .plate1 .line2 {
     stroke-dasharray: 40 200;
     stroke-dashoffset: 0px;

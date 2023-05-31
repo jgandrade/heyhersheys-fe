@@ -17,7 +17,7 @@ const NavigationalBar: FC = () => {
         heyhersheys
       </Link>
       <BurgerButton setActive={() => setActiveToggle()} />
-      {active && <SideBar />}
+      <SideBar isActive={active} />
     </Box>
   );
 };
