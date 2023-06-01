@@ -1,6 +1,6 @@
+import "./styles/BurgerButton.scss";
 import { Box } from "@mui/material";
 import { FC, useRef } from "react";
-import "./styles/BurgerButton.scss";
 
 type BurgerButtonProps = {
   setActive: () => void;
