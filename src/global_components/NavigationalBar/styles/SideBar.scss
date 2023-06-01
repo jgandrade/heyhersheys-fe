@@ -1,29 +1,20 @@
 .sidebar-navigational-bar {
     position: absolute;
-    height: 100vh;
     width: 100%;
+    height: 100vh;
+    overflow: hidden;
     top: 0;
     left: 0;
     z-index: 500;
     background-color: rgb(250, 250, 250);
-    animation: fade-out 0.5s ease forwards;
-
-    @keyframes fade-out {
-        from {
-            opacity: 1;
-        }
-        to {
-            opacity: 0;
-            visibility: hidden;
-        }
-    }
 
     .list-links {
-        text-align: center;
-        color: #333333;
-        font-weight: bolder;
-        font-size: 5em;
-
+        ul{
+            text-align: center;
+            color: #333333;
+            font-weight: bolder;
+            font-size: 5em;
+        }
         li {
             cursor: pointer;
         }
@@ -32,14 +23,29 @@
 
 .active-sidebar {
     animation: fade-in 0.5s ease forwards;
-    visibility: visible;
     @keyframes fade-in {
         from {
             opacity: 0;
+            visibility: hidden;
         }
         to {
             opacity: 1;
             visibility: visible;
+        }
+    }
+}
+
+.inactive-sidebar {
+    animation: fade-out 0.5s ease forwards;
+
+    @keyframes fade-out {
+        from {
+            opacity: 1;
+            visibility: visible;
+        }
+        to {
+            opacity: 0;
+            visibility: hidden;
         }
     }
 }
