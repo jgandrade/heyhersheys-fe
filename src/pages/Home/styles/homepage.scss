@@ -4,36 +4,37 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgb(255, 209, 220);
-    padding: 10em 0 5em 10em;
+    padding: 10em 0 5em 0;
     animation: fade-in 0.5s ease forwards;
 
-    @keyframes fade-in {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
     .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-top: 12em;
+
         h2 {
             font-family: dream_only;
-            font-size: 4em;
             color: #222222;
             font-weight: bolder;
             text-shadow: 1px 10px 50px white;
+            opacity: 0;
+            animation: fade-in 1s ease forwards;
+            animation-delay: 1s;
         }
 
         p {
             margin-top: 3em;
             font-family: grape_nuts;
-            font-size: 2em;
             color: #222222;
             font-weight: bolder;
             text-shadow: 1px 3px 1px rgb(253, 253, 253);
+            opacity: 0;
+            animation: fade-in 1s ease forwards;
+            animation-delay: 2s;
         }
+
+
     }
 }

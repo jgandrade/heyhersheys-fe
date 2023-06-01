@@ -16,3 +16,16 @@
     font-family: oswald;
     src: url("../assets/oswald.ttf") format("truetype");
 }
+
+body {
+    background-color: #eeeeee;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
