@@ -22,8 +22,8 @@
 }
 
 .active-sidebar {
-    animation: fade-in 0.5s ease forwards;
-    @keyframes fade-in {
+    animation: fade-in-sidebar 0.5s ease forwards;
+    @keyframes fade-in-sidebar {
         from {
             opacity: 0;
             visibility: hidden;
@@ -36,9 +36,9 @@
 }
 
 .inactive-sidebar {
-    animation: fade-out 0.5s ease forwards;
+    animation: fade-out-sidebar 0.5s ease forwards;
 
-    @keyframes fade-out {
+    @keyframes fade-out-sidebar {
         from {
             opacity: 1;
             visibility: visible;
