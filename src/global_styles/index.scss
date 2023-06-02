@@ -23,16 +23,16 @@ body {
     overflow-x: hidden;
 }
 
-*::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 0.4em;
 }
 
-*::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-*::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, rgba(234, 249, 142, 1) 0%, rgba(251, 116, 206, 1) 55%);
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(234, 249, 142, 1) 0%, rgb(243, 160, 215) 55%);
     border-radius: 0.5em;
 }
 

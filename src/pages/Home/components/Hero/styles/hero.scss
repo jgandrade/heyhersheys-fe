@@ -30,8 +30,12 @@
     .cta-btns {
         margin-top: 10vh;
         display: flex;
-        gap: 10em;
+        gap: 4em;
         font-size: 1.1em;
+        opacity: 0;
+        animation: fade-in 1s ease forwards;
+        animation-delay: 2.5s;
+
         img {
             width: 20px;
             opacity: 0;
@@ -56,14 +60,21 @@
             padding-bottom: 38px;
         }
 
-        // @media (min-width: 640px) { ... }
-        // @media (min-width: 768px) { ... }
-        // @media (min-width: 1024px) { ... }
-        // @media (min-width: 1280px) { ... }
-        // @media (min-width: 1536px) { ... }
+        @media (min-width: 640px) {
+            gap: 6em;
+        }
+        @media (min-width: 768px) {
+            gap: 7em;
+        }
+        @media (min-width: 1024px) {
+            gap: 10em;
+        }
     }
 
     .cta-down {
+        opacity: 0;
+        animation: fade-in 1s ease forwards;
+        animation-delay: 3s;
         position: relative;
         bottom: -160px;
         left: 0;

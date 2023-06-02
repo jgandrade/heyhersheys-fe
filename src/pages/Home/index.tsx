@@ -4,9 +4,9 @@ import { Hero } from "./components";
 
 const Home: React.FC = () => {
   return (
-    <Box className="homepage">
-      <Hero />
-    </Box>
+      <Box className="homepage">
+        <Hero />
+      </Box>
   );
 };
 
