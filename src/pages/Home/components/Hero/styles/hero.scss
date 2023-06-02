@@ -75,9 +75,7 @@
         opacity: 0;
         animation: fade-in 1s ease forwards;
         animation-delay: 3s;
-        position: relative;
-        bottom: -160px;
-        left: 0;
+        margin-top: 10em;
         transition: all 0.1s ease;
 
         &:hover {
