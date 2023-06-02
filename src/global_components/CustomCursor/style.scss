@@ -25,15 +25,27 @@
   height: 60px;
 
   .cursor-background {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     top: -210px;
     left: -220px;
     border-radius: 50%;
     border: 1px solid black;
     position: relative;
-    filter: blur(300px);
-    background: linear-gradient(180deg, rgb(220, 253, 2) 0%, rgb(250, 48, 183) 48%, rgb(248, 244, 8) 100%);
+    filter: blur(250px);
+    background: linear-gradient(180deg, rgb(75, 247, 52) 0%, rgb(153, 77, 252) 48%, rgb(238, 14, 32) 100%);
+    animation: rotation-animate 10s linear infinite alternate;
+
+    @keyframes rotation-animate {
+      from{
+        transform: rotate(0deg);
+        width: 600px;
+      }
+      to{
+        transform: rotate(360deg);
+        width: 300px;
+      }
+    }
     &:after,
     &:before {
       content: "";
