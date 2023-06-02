@@ -21,6 +21,7 @@
 body {
     background-color: #eeeeee;
     overflow-x: hidden;
+    cursor: none;
 }
 
 ::-webkit-scrollbar {
@@ -32,7 +33,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, rgba(234, 249, 142, 1) 0%, rgb(243, 160, 215) 55%);
+    background: linear-gradient(180deg, rgb(223, 241, 103) 0%, rgb(245, 121, 204) 55%);
     border-radius: 0.5em;
 }
 
