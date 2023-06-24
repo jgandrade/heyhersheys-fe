@@ -10,16 +10,5 @@
             fill: none;
             text-align: center;
         }
-
-        img {
-            width: 300px;
-            transition: all 0.3s ease;
-            filter: grayscale(1);
-        }
-
-        img:hover{
-            filter: grayscale(0);
-            transform: scale(1.1);
-        }
     }
 }
