@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { Box, Container, Card, CardContent, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import "./styles/contents.scss";
-import artwork from "./assets/artwork.jpg";
+
 import { client } from "../../../../sanity/client";
 import BlockContent from "@sanity/block-content-to-react";
 
@@ -54,7 +54,7 @@ const Contents = () => {
       )
       .then((data) => setPost(data));
   }, []);
-  console.log(postData);
+
   return (
     <Box className="contents-homepage mt-56">
       <Container>
